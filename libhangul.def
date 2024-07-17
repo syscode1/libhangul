@@ -1,0 +1,10 @@
+LIBRARY	libhangul.dll
+EXPORTS
+	hangul_ic_new
+	hangul_ic_delete
+	hangul_ic_process
+	hangul_ic_reset
+	hangul_ic_backspace
+	hangul_ic_get_preedit_string
+	hangul_ic_get_commit_string
+	hangul_ic_flush
