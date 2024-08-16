@@ -34,10 +34,8 @@ if(MSVC)
     )
 
     # Module definition file
-    set_target_properties(hangul PROPERTIES LINK_FLAGS "/DEF:${CMAKE_CURRENT_SOURCE_DIR}/libhangul.def")
-
-    # 디버그 정보 생성 비활성화
-    set_target_properties(hangul PROPERTIES LINK_FLAGS_DEBUG "/DEBUG:NONE")
+    set_target_properties(hangul PROPERTIES LINK_FLAGS "/DEF:${CMAKE_CURRENT_SOURCE_DIR}/libhangul.def"
+	                                    LINK_FLAGS_DEBUG "/DEBUG:NONE") # 디버그 정보 생성 비활성화
 endif()
 
 target_compile_definitions(hangul PRIVATE
