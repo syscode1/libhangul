@@ -1,0 +1,21 @@
+LIBRARY	libhangul.dll
+EXPORTS
+	hangul_ic_new
+	hangul_ic_delete
+	hangul_ic_process
+	hangul_ic_reset
+	hangul_ic_backspace
+	hangul_ic_is_empty
+	hangul_ic_has_choseong
+	hangul_ic_has_jungseong
+	hangul_ic_has_jongseong
+	hangul_ic_is_transliteration
+	hangul_ic_get_option
+	hangul_ic_set_option
+	hangul_ic_set_output_mode
+	hangul_ic_set_keyboard
+	hangul_ic_select_keyboard
+	hangul_ic_connect_callback
+	hangul_ic_get_preedit_string
+	hangul_ic_get_commit_string
+	hangul_ic_flush
