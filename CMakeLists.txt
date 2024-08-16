@@ -32,6 +32,8 @@ if(MSVC)
         $<$<CONFIG:Debug>:/MTd>
         $<$<CONFIG:Release>:/MT>
     )
+
+    set_target_properties(hangul PROPERTIES LINK_FLAGS "/DEF:${CMAKE_CURRENT_SOURCE_DIR}/libhangul.def")
 endif()
 
 target_compile_definitions(hangul PRIVATE
