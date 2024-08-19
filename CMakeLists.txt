@@ -25,7 +25,7 @@ if(MSVC)
     )
 
     # Debug와 Release 구성에 따른 런타임 라이브러리 설정
-    set(CMAKE_MSVC_RUNTIME_LIBRARY "MultiThreaded$<$<CONFIG:Debug>:Debug>")
+    #set(CMAKE_MSVC_RUNTIME_LIBRARY "MultiThreaded$<$<CONFIG:Debug>:Debug>")
     
     # 추가적인 컴파일 옵션 설정
     target_compile_options(hangul PRIVATE
